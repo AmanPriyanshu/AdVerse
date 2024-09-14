@@ -22,7 +22,7 @@ function ContentCreator() {
   const [statusMessage, setStatusMessage] = useState('');
   const [randomName, setRandomName] = useState('');
 
-  const apiURL = 'https://logistics-sur-lie-cdna.trycloudflare.com/';
+  const apiURL = 'https://birth-system-gallery-sold.trycloudflare.com/';
 
   const adOptions = ['T-shirt', 'Sneakers', 'Smartphone', 'Headphones', 'Watch', 'Pants'];
 
@@ -115,7 +115,7 @@ function ContentCreator() {
   
       setStatusMessage('Fetching edited image...');
       const filename = `edited_${randomName}_${selectedImageFile.name}`;
-      const response = await axios.get(`${apiURL}/get_edited_meme/${randomName}`, {
+      const response = await axios.get(`${apiURL}/get_edited_meme/${filename}`, {
         responseType: 'blob',
       });
   
