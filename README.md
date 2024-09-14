@@ -1,2 +1,2 @@
-# HackCMU-24
+# AdVerse
 HackCMU'24
